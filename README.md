@@ -1,16 +1,21 @@
 # marimba_app
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Marimba App
 
-A few resources to get you started if this is your first Flutter project:
+Este aplicativo é um instrumento musical onde é possível que, ao clicar em cada botão seja reproduzido um som diferente.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+O que foi aprendido neste projeto:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- trabalhar com arrow function =>;
+- usar packages do flutter;
+- adicionar packages de reprodução de som e assim conseguir reproduzir sons;
+- trabalhar com funções com parametros nomeados e com mais de um argumento;
+- usar funções para reduzir a repetição de código;
+
+
+
+Este aplicativo é parte de um curso disponível no youtube no canal Polimorfismo!
+
+

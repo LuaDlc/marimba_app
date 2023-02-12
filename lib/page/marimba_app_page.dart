@@ -9,7 +9,16 @@ class MarimbaAppPage extends StatelessWidget {
     player.play(AssetSource('nota$numeroSom.wav'));
   }
 
-  void criarBotao() {}
+  Expanded criarBotao(Color cor, int numeroDaNota) {
+    return Expanded(
+      child: TextButton(
+          onPressed: () async {
+            tocarSom(numeroDaNota);
+          },
+          style: TextButton.styleFrom(backgroundColor: cor),
+          child: const Text('')),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,54 +29,13 @@ class MarimbaAppPage extends StatelessWidget {
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(
-            child: TextButton(
-                onPressed: () async {
-                  tocarSom(1);
-                },
-                style: TextButton.styleFrom(backgroundColor: Colors.red),
-                child: const Text('Clique aqui')),
-          ),
-          Expanded(
-            child: TextButton(
-                onPressed: () async {
-                  tocarSom(2);
-                },
-                style: TextButton.styleFrom(backgroundColor: Colors.pink),
-                child: const Text('Clique aqui')),
-          ),
-          Expanded(
-            child: TextButton(
-                onPressed: () async {
-                  tocarSom(3);
-                },
-                style: TextButton.styleFrom(backgroundColor: Colors.blue),
-                child: const Text('Clique aqui')),
-          ),
-          Expanded(
-            child: TextButton(
-                onPressed: () async {
-                  tocarSom(4);
-                },
-                style: TextButton.styleFrom(backgroundColor: Colors.yellow),
-                child: const Text('Clique aqui')),
-          ),
-          Expanded(
-            child: TextButton(
-                onPressed: () async {
-                  tocarSom(5);
-                },
-                style: TextButton.styleFrom(backgroundColor: Colors.green),
-                child: const Text('Clique aqui')),
-          ),
-          Expanded(
-            child: TextButton(
-                onPressed: () async {
-                  tocarSom(6);
-                },
-                style: TextButton.styleFrom(backgroundColor: Colors.brown),
-                child: const Text('Clique aqui')),
-          ),
+          criarBotao(Colors.teal, 1),
+          criarBotao(Colors.pink, 2),
+          criarBotao(Colors.red, 3),
+          criarBotao(Colors.brown, 4),
+          criarBotao(Colors.blue, 5),
+          criarBotao(Colors.orange, 6),
+          criarBotao(Colors.yellow, 7),
         ],
       )),
     ));

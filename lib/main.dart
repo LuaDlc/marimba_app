@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:marimba_app/page/marimba_app_page.dart';
+
 void main() => runApp(MarimbaApp());
 
 class MarimbaApp extends StatelessWidget {
@@ -7,9 +9,6 @@ class MarimbaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-      body: SafeArea(child: Container()),
-    ));
+    return MaterialApp(home: MarimbaAppPage());
   }
 }
